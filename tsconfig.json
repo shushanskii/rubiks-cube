@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "lib": [
       "dom",
       "dom.iterable",
@@ -17,8 +17,18 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": "./src",
+    "paths": {
+      "scene/*": ["scene/*"],
+      "components/*": ["components/*"],
+      "contexts/*": ["contexts/*"],
+      "utils/*": ["utils/*"],
+      "state/*": ["state/*"],
+      "reducers/*": ["reducers/*"],
+      "selectors/*": ["selectors/*"],
+      "types/*": ["types/*"]
+    }
   },
   "include": [
     "src"
